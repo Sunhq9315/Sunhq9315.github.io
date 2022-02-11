@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Brightblue Material Technology</title>
+	<link rel="shortcut icon" type="text/css" href="img/icon.png">
+</head>
+<style type="text/css">
+	.content1{
+		width: 1200px;
+		height: 80px;
+		position: absolute;
+		background-image:  linear-gradient(45deg, rgba(255,255,255,1),rgba(255,255,255,0.5));
+	}
+	.menu0{
+		width: 70px;
+		height: 50px;
+		margin-top: 10px;
+		margin-left: 50px;
+		border-radius: 30px;
+	}
+	.menu{
+		float: right;
+		line-height: 80px;
+		margin-right: 20px;
+	}
+	.menu1{
+		margin-left: 30px;
+		color: grey;
+		text-decoration: none;
+		font-family: "微软雅黑";
+	}
+	.menu1:hover{
+		color: skyblue;
+	}
+	.active{
+		color: skyblue;
+	}
+	.box{
+		width: 1200px;
+		height: 600px;
+		margin: auto;
+		cursor: pointer;
+	}
+	.img{
+		width: 1200px;
+		height: 600px;
+		opacity: 0;
+	}
+	.show{
+		opacity: 1;
+		transition: all 0.8s;
+	}
+	.content2{
+		width: 800px;
+		height: 200px;
+		margin:40px auto;
+		text-align: center;
+		font-size: 20px;
+		font-family: "微软雅黑";
+	}
+	.content1_menu{
+		width: 350px;
+		height: 300px;
+		position: absolute;
+		margin-left: 120px;
+		margin-top: 200px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 1px 1px 2px grey;
+		font-family: "微软雅黑";
+	}
+	.content1_menu ul li{
+		list-style-type: none;
+		line-height: 50px;
+		color: grey;
+	}
+	.content1_menu a{
+		text-decoration: none;
+		color: grey;
+	}
+	.content1_menu ul li:hover{
+		color: skyblue;
+		line-height: 60px;
+		font-size: 20px;
+		border-radius: 10px;
+		border-bottom: 1px solid rgba(211,211,211,0.9);
+	}
+	.content2 p{
+		font-size: 15px;
+	}
+	.content3{
+		width: 830px;
+		height: 200px;
+		margin:20px auto;
+		text-align: center;
+		font-size: 20px;
+		font-family: "微软雅黑";
+		background-color: rgba(211,211,211,0.3);
+	}
+	.content3_1{
+		width: 300px;
+		height: 200px;
+		display: inline-block;
+		background-image: url(img/content3.png);
+		background-size: 100% 100%;
+	}
+	.content3:hover{
+		box-shadow: 1px 1px 2px grey;
+		cursor: pointer;
+	}
+	.content2:hover{
+		box-shadow: 1px 1px 2px grey;
+		cursor: pointer;
+	}
+	.content4:hover{
+		box-shadow: 1px 1px 2px grey;
+		cursor: pointer;
+	}
+	.content5:hover{
+		box-shadow: 1px 1px 2px grey;
+		cursor: pointer;
+	}
+	.content6:hover{
+		box-shadow: 1px 1px 2px grey;
+		cursor: pointer;
+	}
+	.content3_2{
+		padding-left: 20px;
+		text-align: left;
+		display: inline-block;
+		width:500px;
+		height: 200px;
+		position: relative;
+		top: -105px;
+	}
+	.content4{
+		width: 830px;
+		height: 100px;
+		margin:40px auto;
+		text-align: center;
+		font-size: 20px;
+		font-family: "微软雅黑";
+	}
+	.content5{
+		width: 830px;
+		height: 260px;
+		margin:20px auto;
+		text-align: center;
+		font-size: 20px;
+		font-family: "微软雅黑";
+		background-color: rgba(211,211,211,0.3);
+	}
+	.content5_1{
+		width: 200px;
+		height: 250px;
+		display: inline-block;
+		background-image: url(img/content5.png);
+		background-size: 100% 100%;
+	}
+	.content5_2{
+		padding-left: 20px;
+		text-align: left;
+		display: inline-block;
+		width:600px;
+		height: 260px;
+		position: relative;
+		top: -10px;
+	}
+	.content6{
+		width: 900px;
+		height: 300px;
+		margin: 40px auto;
+	}
+	.content6 td{
+		text-align: center;
+		vertical-align: top;
+		width: 225px;
+		cursor: pointer;
+	}
+	.content6 td:hover{
+		background-color: lightgrey;
+	}
+	footer{
+		height: 200px;
+		background-color: rgba(0,0,0,0.7);
+		text-align: center;
+		color: white;
+	}
+	footer img{
+		width: 50px;
+		height: 50px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+</style>
+<body>
+	<div class="box">
+		<div class="content1">
+		<img class="menu0" src="img/icon.png">
+		<span class="menu">
+			<a class="menu1 active" href="index.html" name="top">About Us</a>
+			<a class="menu1" href="index2.html">Product</a>
+			<a class="menu1" href="index3.html">R&D</a>
+			<a class="menu1" href="index4.html">Application</a>
+			<a class="menu1" href="index5.html">Contact Us</a>
+		</span>
+	</div>
+		<div class="img show">
+			<div class="content1_menu">
+				<ul>
+					<li><a href="#a1">Company Introduction</a></li>
+					<li><a href="#a2">Vision</a></li>
+					<li><a href="#a3">Mission</a></li>
+					<li><a href="#a4">Core Value</a></li>
+					<li><a href="#a5">Diversity, Equity and Inclusion</a></li>
+				</ul>
+			</div>
+		</div>
+	<div class="content2">
+		<a name="a1">Company Introduction</a>
+		<p style="font-size:10px;">Since the year 2006, Brightblue Material Technology has grown to become a leading supplier of material and components in air filtration industry in China , our main products includes  aluminum foil ,metal meshes and filter plastic frames etc. 
+Our modern facilities have a combined strength of over 120 skilled engineers, technicians, and manufacturing associates. All our facilities are ISO 9001:2015,, ISO 14001:2015 certified.
+ At the cutting edge of technology, Brightblue has finely-honed expertise for providing solutions on designing and manufacturing complex materials and products.
+Welcome to “BRIGHTBLUE”, where we’re sure, you’ll discover value-added solutions to your total supply chain.</p>
+	</div>
+	<div class="content3">
+		<div class="content3_1">
+			
+		</div><div class="content3_2">
+			<p><a name="a2">Vision</a></p>
+			<p style="font-size:10px;">To be leading producer of highly engineered products by exceeding our customer’s expectation on Quality , Delivery ,Cost and Service.</p>
+		</div>
+	</div>
+	<div class="content4">
+		<a name="a3">Mission</a>
+		<p style="font-size:10px;">To create sustainable value for our customers, shareholders, and communities , exceeding their expectations by focusing on growth opportunities, achieving operational excellence through continuous improvement.</p>
+	</div>
+	<div class="content5">
+		<div class="content5_2">
+			<p><a name="a4">Core Value</a></p>
+			<p style="font-size:10px;"><span style="font-weight:bold;">Core Value</span>
+				<br>
+<span style="font-weight:bold;">Customer Satisfaction </span>
+<br>
+We prioritize customer satisfaction as our top priority, consistently providing world class products and services.
+<br>
+<span style="font-weight:bold;">Teamwork</span>
+<br>
+We cultivate teamwork, communicate openly, share best practices, recognize accomplishment, respect individual and support personal development.
+<br>
+<span style="font-weight:bold;">Performance </span>
+<br>         
+We are results driven, focused on measurable and achievable goals 
+<br> 
+<span style="font-weight:bold;">Initiative  </span> 
+<br>   
+We take ownership, accepting personal responsibility for solving problems and are creative in finding new solutions for our customers.</p>
+		</div><div class="content5_1">
+			
+		</div>
+	</div>
+	<table class="content6">
+		<tr>
+			<td style="height:30px;font-size:20px;" colspan="4"><span><a name="a5">Diversity, Equity and Inclusion</a></span></td>
+		</tr>
+		<tr>
+			<td><p><span style="font-weight: bold;">Diversity, Equity and Inclusion</span><br>
+The Brightblue team is striving to create and maintain a company culture that values and embraces the diversity of thought, allowing us to engage with one another and our society.
+</p></td>
+			<td><p><span style="font-weight: bold;">Diversity</span><br>
+Different perspectives ignite creativity and drive innovation. We welcome people of any race, gender, religion, ethnicity, nationality, socioeconomic status, language, ability, age, and political perspective. </p></td>
+			<td><p><span style="font-weight: bold;">Equity</span><br>
+We are working to establish protocols to ensure fair treatment and equal opportunity for everyone within our organization and for those who seek to join us. We’re committed to the growth needed to enact substantive reforms, and we’re committed to building a community of respect and impartiality. </p></td>
+			<td><p><span style="font-weight: bold;">Inclusion</span><br>
+We believe it’s essential that each person, no matter their background or perspective, feels welcome at the table and encouraged to share their ideas. If employees can’t participate fully, their unique skills go unutilized.
+
+</p></td>
+		</tr>
+	</table>
+	<footer>
+		
+		<a href="#top"><img src="img/vision.png"></a>
+		<br>
+		<span>All rights reserved ©Brightblue Material Technology Co., Ltd.</span>
+	</footer>
+</body>
+<script type="text/javascript">
+	var img=document.getElementsByClassName("img")[0];
+	let index=1;
+	// for(var i=0;i<img.length;i++){
+	// 	img[i].style.background="url(img/slider"+(i+1)+".jpg)";
+	// 	img[i].style.backgroundSize="100% 100%";
+	// }
+	function clear(){
+		img.className="img";
+	}
+	function show(){
+		img.style.background="url(img/slider"+index+".jpg)";
+		img.style.backgroundSize="100% 100%";
+		img.className="img show";
+	}
+	show();
+	var timer;
+	function timeshow(){
+		timer=setInterval(function(){
+			clear();
+			index++;
+			if(index>3){
+				index=1;
+			}
+			show();
+		},4000)
+	}
+	timeshow();
+</script>
+</html>

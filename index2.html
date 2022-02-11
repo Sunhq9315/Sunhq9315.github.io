@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Brightblue Material Technology</title>
+	<link rel="shortcut icon" type="text/css" href="img/icon.png">
+</head>
+<style type="text/css">
+	.content1{
+		width: 1200px;
+		height: 80px;
+		position: absolute;
+		background-image:  linear-gradient(45deg, rgba(255,255,255,1),rgba(255,255,255,0.5));
+	}
+	.menu0{
+		width: 70px;
+		height: 50px;
+		margin-top: 10px;
+		margin-left: 50px;
+		border-radius: 30px;
+	}
+	.menu{
+		float: right;
+		line-height: 80px;
+		margin-right: 20px;
+	}
+	.menu1{
+		margin-left: 30px;
+		color: grey;
+		text-decoration: none;
+		font-family: "微软雅黑";
+	}
+	.menu1:hover{
+		color: skyblue;
+	}
+	.active{
+		color: skyblue;
+	}
+	.box{
+		width: 1200px;
+		height: 600px;
+		margin: auto;
+		cursor: pointer;
+	}
+	.img{
+		width: 1200px;
+		height: 500px;
+		opacity: 0;
+	}
+	.show{
+		opacity: 1;
+		transition: all 0.8s;
+	}
+	.content2{
+		width: 800px;
+		height: 200px;
+		margin:40px auto;
+		text-align: center;
+		font-size: 20px;
+		font-family: "微软雅黑";
+	}
+	.content1_menu{
+		width: 350px;
+		height: 300px;
+		position: absolute;
+		margin-left: 120px;
+		margin-top: 200px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 1px 1px 2px grey;
+		font-family: "微软雅黑";
+	}
+	.content2{
+		width: 1200px;
+		height: 1200px;
+		margin: 20px auto;
+	}
+	.content2_menu{
+		width: 350px;
+		height: 1200px;
+		background-color: rgba(211,211,211,0.3);
+	}
+	.content2_menu td{
+		height: 80px;
+		font-size: 13px;
+	}
+	.content2_menu_1{
+		background-color: rgba(69 139 116);
+	}
+	.content2_menu_2{
+		display: inline-block;
+		width: 300px;
+		height: 60px;
+		line-height: 60px;
+		background-color: white;
+	}
+	.content2_menu_2:hover{
+		background-color: green;
+		color: white;
+		font-weight: bold;
+	}
+	footer{
+		height: 200px;
+		background-color: rgba(0,0,0,0.7);
+		text-align: center;
+		color: white;
+	}
+	footer img{
+		width: 50px;
+		height: 50px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.content2_menu1{
+		width: 850px;
+		height: 1200px;
+	}
+	.content2_menu1 td{
+		vertical-align: top;
+		text-align: left;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+	.content_1_span img{
+		max-width: 200%;
+		max-height: 200%;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.content_1_img img{
+		max-width: 40%;
+		max-height: 40%;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	.content_1_span{
+		display: none;
+	}
+	.content_1_img{
+		display: none;
+	}
+	.content_1_span_show{
+		display: inline;
+	}
+	.content_1_img_show{
+		display: inline;
+	}
+</style>
+<body>
+	<div class="box">
+		<div class="content1">
+		<img class="menu0" src="img/icon.png">
+		<span class="menu">
+			<a class="menu1" href="index.html" name="top">About Us</a>
+			<a class="menu1 active" href="index2.html">Product</a>
+			<a class="menu1" href="index3.html">R&D</a>
+			<a class="menu1" href="index4.html">Application</a>
+			<a class="menu1" href="index5.html">Contact Us</a>
+		</span>
+	</div>
+	<div class="img show">
+	</div>
+	<table class="content2">
+		<tr>
+			<td style="width:350px;">
+				<table class="content2_menu">
+					<tr>
+						<td class="content2_menu_1 content2_menu_all"><a class="content2_menu_title" style="font-size:20px;">Aluminum Foil</a></td>
+					</tr>
+					<tr>
+						<td class="content2_menu_all"><a class="content2_menu_2">H1060H18</a></td>
+					</tr>
+					<tr>
+						<td class="content2_menu_all"><a class="content2_menu_2">A110018</a></td>
+					</tr>
+					<tr>
+						<td class="content2_menu_all"><a class="content2_menu_2">8011H18</a></td>
+					</tr>
+					<tr>
+						<td class="content2_menu_1 content2_menu_all"><a class="content2_menu_title" style="font-size:20px;">Metal mesh</a></td>
+					</tr>
+					<tr>
+						<td class="content2_menu_all"><a class="content2_menu_2">Galvanized expanded metal mesh</a></td>
+					</tr>
+					<tr>
+						<td class="content2_menu_all"><a class="content2_menu_2">Anodized Aluminum expanded metal mesh</a></td>
+					</tr>
+					<tr>
+						<td class="content2_menu_all"><a class="content2_menu_2">Powder coated expanded metal mesh</a></td>
+					</tr>
+					<tr>
+						<td class="content2_menu_all"><a class="content2_menu_2">Perforated metal mesh</a></td>
+					</tr>
+					<tr>
+						<td class="content2_menu_1 content2_menu_all" style="font-size:20px;"><a class="content2_menu_title">Plastic Component</a></td>
+					</tr>
+					<tr>
+						<td class="content2_menu_all"><a class="content2_menu_2">V bank plastic frame</a></td>
+					</tr>
+					<tr>
+						<td class="content2_menu_all"><a class="content2_menu_2">Rectangular V bank plastic frame</a></td>
+					</tr>
+					<tr>
+						<td class="content2_menu_all"><a class="content2_menu_2">Panel filter plastic frame</a></td>
+					</tr>
+					<tr>
+						<td class="content2_menu_all"><a class="content2_menu_2">Bag filter frame</a></td>
+					</tr>
+					<tr>
+						<td class="content2_menu_all"><a class="content2_menu_2">Connectors for panel filter frame</a></td>
+					</tr>
+				</table>
+			</td>
+			<td>
+				<table class="content2_menu1">
+					<tr>
+						<td style="height: 100px;">
+							<div class="content_1_span content_1_span_show">
+								<p>Our foil rolling mills tailored to the specific operation purpose reliably produce best foil qualities at maximum rolling speeds, maximum rolling widths and highest coil weights , which could produce a wide range of aluminum foils from thickness 0.7 mm to 0.006 mm , and our aluminum foils are widely used as separator of air filter , and starting material for processes of coating, laminating, printing and other end products etc.
+								</p>
+							</div>
+							<div class="content_1_span">
+								<p>H1060H18 is suitable for to use as separator in HEPA air filters in clean room , which demonstrates excellent mechanical properties in corrugating process .
+								</p>
+							</div>
+							<div class="content_1_span">
+								<p>1100 series has relatively low strength, excellent ductility, formability, weldability and corrosion resistance; after anodizing, it can further improve corrosion resistance and obtain a beautiful surface; but it cannot be strengthened by heat treatment.
+								</p>
+								<p>
+									<a style="font-weight: bold;">Application:</a>
+									<br>
+ air conditioning system, aluminum composite panel, lamp material, heat exchanger etc.
+ <br>
+Surface: bare foil roll
+<br>
+Character: anti-corrosion, heat resistant
+<br>
+Color: silver
+<br>
+Thickness: 0.02mm-0.06mm , 
+<br>
+Width: 110mm-2600mm
+<br>
+Length: 1000M- 20000M
+<br>
+Outer diameter: 250-620mm
+<br>
+Inner diameter: 3 inches or 6 inches
+<br>
+Core material: aluminum or steel
+<br>
+Package: Wood case
+
+								</p>
+							</div>
+							<div class="content_1_span">
+								<p>Aluminum alloy 8011 is a typical alloy for aluminum foil and which is currently the most widely used metal in our daily life, thickness is from 0.005mm up to 0.2mm, width is from 150mm up to 1980mm, for varies of final applications including food flexible packaging, pharmaceutical packing, household foil, food container, collapsible tube, cigarette pack and so on.</p>
+								<p>
+									<span style="font-weight: bold;">Application:</span>
+									<br>
+ air conditioning system, blister packaging, cosmetic tube, lids, beer mark, kitchen, food container etc 
+ <br>
+<span style="font-weight: bold;">Specification:</span>
+<br>
+Temper: H18 , H24<br>
+Surface: bare foil roll<br>
+Character: anti-corrosion, heat resistant<br>
+Color: silver<br>
+Thickness: 0.01mm-0.2mm , <br>
+Width: 110mm-1980mm<br>
+Length: 1000M- 20000M<br>
+Outer diameter: 250-620mm<br>
+Inner diameter: 3 inches or 6 inches<br>
+Core material: aluminum or steel<br>
+Package: Wood case<br>
+								</p>
+							</div>
+							<div class="content_1_span">
+								<p>
+									Rely on our leading technologies in the industry, the metal mesh produced by us has no burrs, and will not break, which ranks the first-class level in the industry whether in flatness ,type or production speed. Our production is automatically done by automatic feeder , expanded metal machine, perforated mesh machine, automatic flattener, and automatic straightener etc. our quality is quite stable because of implementing a robust quality management systems in the facility, we have been serving satisfied clients for years both domestic and international .
+
+								</p>
+							</div>
+							<div class="content_1_span">
+								<p>
+									Galvanized expanded metal mesh is made by expanded metal through cutting and expanding and anodizing processes, because of its excellent advantage on material cost , it’s widely used on air filter and oil filter as the supporting layer or as the mesh frame, our products are burrs free and perfect for pleating .
+								</p>
+								<img src="img/img_23.png">
+								<img src="img/img_24.png">
+							</div>
+							<div class="content_1_span">
+								<p>
+									Anodized expanded metal mesh is made by expanded metal through cutting and expanding and anodizing processes, because of its excellent advantage on material cost , it’s widely used on air filter and oil filter as the supporting layer or as the mesh frame, our products are burrs free and perfect for pleating .
+
+								</p>
+								<img src="img/img_26.png">
+								<img src="img/img_27.png">
+							</div>
+							<div class="content_1_span">
+								<p>
+									Powder coated  expanded metal mesh is made by expanded metal through cutting and expanding and powder coating  processes, because of its excellent advantage on material cost, it is widely used for stationary, wall protection, mesh door , mesh frames etc.
+
+
+								</p>
+								<img src="img/img_29.png">
+								<img src="img/img_30.png">
+							</div>
+							<div class="content_1_span">
+								<p>We call produce all kinds of perforated metal mesh base on specific customer needs such as the material, thickness, hole diameter, percentage of opening ,flatness etc., we have round, rectangle, square, decorative hole to exactly meet customers’ expectation. 
+</p>
+							</div>
+							<!-- ------------------------- -->
+							<div class="content_1_span">
+								<p>BRIGHTBLUE specializes in the production of various purification equipment and accessories, our main products are plastic frames for coarse, sub-Hepa and HEPA air filters , bag filter plastic frames, panel filter plastic frames , and a variety of plastic connectors ,filter press, etc., rely on our professional R&D team , advanced production equipment and robust quality measurement systems ,we’ve build constructive partnership with clients from filtration ,electronics, pharmaceuticals , instrumentation, food industries .
+</p>
+							</div>
+							<div class="content_1_span">
+								<p>V bank filter is applied to large air flow ventilation system, filtration system of Pharmaceutical, food, hospitals, clean room, etc., It can be used as terminal-filtration of medium and high efficiency filtration system or pre-filtration of super-efficient filtration system. We supply all kinds of V-bank air filter frames to both domestic and international customers  .
+</p>
+<br>
+<br>
+<p>
+	Features<br>
+Light weight<br>
+Easy to install<br>
+Low cost<br>
+</p>
+<p>
+	Application:<br> 
+Used for V bank air filter in industries such as  Electronics, Pharmaceuticals, Chemicals, Precision Machinery, Bio-medical, Food, Beverage etc.<br>
+
+</p>
+							</div>
+							<div class="content_1_span">
+								
+							</div>
+							<div class="content_1_span">
+								
+							</div>
+							<div class="content_1_span">
+								
+							</div>
+							<div class="content_1_span">
+								
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="content_1_img content_1_img_show">
+								<img src="img/img_2.jpg">
+								<img src="img/img_9.jpg">
+								<img src="img/img_10.jpg">
+								<img src="img/img_11.jpg">
+							</div>
+							<div class="content_1_img">
+								<img src="img/img_12.jpg">
+								<img src="img/img_13.jpg">
+							</div>
+							<div class="content_1_img">
+								<img src="img/img_14.png">
+								<img src="img/img_15.png">
+								<img src="img/img_16.png">
+							</div>
+							<div class="content_1_img">
+								<img src="img/img_17.png">
+								<img src="img/img_18.png">
+							</div>
+							<div class="content_1_img">
+								<img src="img/img_19.png">
+								<img src="img/img_20.png">
+								<img src="img/img_21.png">
+								<img src="img/img_22.png">
+							</div>
+							<div class="content_1_img">
+								<p>Available size (mm):
+T(Thickness of strand)* W(Width of strand)*S(short way of mesh)*D(Long way of mesh)
+0.6*0.75*8*13 / 0.8*1.0*8*13 / 0.85*0.9*8*13/0.8*1.55*8*16 /1.0*1.2*15*25 /1.0*1.4*15*25 /
+</p>
+<img src="img/img_25.png">
+<p>Typical roll widths: 577mm ,580mm,610mm<br>
+Typical roll lengths:150m, 200m,300m<br>
+</p>
+<p><a style="font-weight: bold;">Application</a><br>
+Air filter, Oil filter, Industrial Enclosures, Marine, Office Buildings, etc.<br>
+<a style="font-weight: bold;">Material Characteristics:</a><br>
+corrosion resistant <br>
+light weight<br>
+packing :wood cases<br>
+</p>
+							</div>
+							<div class="content_1_img">
+								<p>Available size (mm):
+T(Thickness of strand)* W(Width of strand)*S(short way of mesh)*D(Long way of mesh)
+0.8*0.8*7*12 / 0.8*1.0*8*13 / 0.8*1.0*9*16/1.0*1.8*9*16 /
+</p>
+<img src="img/img_28.png">
+<p>
+	Typical roll widths: 577mm ,580mm,610mm<br>
+Typical roll lengths:150m, 200m,300m<br>
+
+</p>
+<p>
+	<a style="font-weight: bold;">Application</a><br>
+Air filter, Oil filter, Industrial Enclosures, Marine, Office Buildings, etc.<br>
+<a style="font-weight: bold;">Material Characteristics:</a><br>
+corrosion resistant <br>
+light weight<br>
+packing :wood cases<br>
+
+</p>
+							</div>
+							<div class="content_1_img">
+								<p>
+									Available size (mm):
+T(Thickness of strand)* W(Width of strand)*S(short way of mesh)*D(Long way of mesh)
+0.6*0.75*8*13 / 0.75*0.85*8*13 / 0.85*1.23*8*13/0.85*1.23*12*28 /1.5*3.0*44*80 
+
+								</p>
+								<img src="img/img_31.png">
+								<p>
+									Typical roll widths: 577mm ,580mm,610mm,1000mm, 1500mm<br>
+Typical roll lengths:150m, 200m,300m,500m,1000m<br>
+
+								</p>
+								<p>
+									<a style="font-weight: bold;">Application</a><br>
+Air filter, Oil filter, Industrial Enclosures, Marine, Office Buildings, etc.<br>
+<a style="font-weight: bold;">Material Characteristics:</a><br>
+corrosion resistant <br>
+light weight<br>
+packing :wood cases<br>
+
+								</p>
+							</div>
+							<div class="content_1_img">
+								<img src="img/img_32.png">
+								<img src="img/img_33.png">
+								<img src="img/img_34.png">
+								<img src="img/img_35.png">
+								<img src="img/img_36.png">
+								<img src="img/img_37.png">
+								<p style="font-weight: bold;">Perforated metal mesh features:</p>
+								<ol>
+									<li>Can be readily formed </li>
+									<li>Can be painted or polished </li>
+									<li>Easy installation </li>
+									<li>Attractive appearance</li>
+									<li>Wide range of thickness available</li>
+									<li>Largest selection of hole size patterns and configurations </li>
+									<li>Uniform sound abatement</li>
+									<li>Light weight</li>
+									<li>Excellent wear life and durable</li>
+									<li>Superior abrasion resistance</li>
+									<li>Accuracy of size </li>
+								</ol>
+							</div>
+							<!-- ------------------------- -->
+							<div class="content_1_img">
+								<img src="img/img_64.png">
+								<img src="img/img_65.png">
+								<img src="img/img_66.png">
+								<img src="img/img_67.png">
+								<img src="img/img_68.png">
+								<img src="img/img_69.png">
+							</div>
+							<div class="content_1_img">
+								<img src="img/img_44.png">
+								<img src="img/img_45.png">
+								<img src="img/img_46.png">
+								<img src="img/img_47.png">
+								<img src="img/img_48.png">
+								<img src="img/img_49.png">
+								<img src="img/img_50.png">
+								<img src="img/img_51.png">
+								<img src="img/img_52.png">
+								<img src="img/img_53.png">
+							</div>
+							<div class="content_1_img">
+								<img src="img/img_54.png">
+								<img src="img/img_55.png">
+								<img src="img/img_56.png">
+								<img src="img/img_57.png">
+							</div>
+							<div class="content_1_img">
+								<img src="img/img_58.png">
+								<img src="img/img_59.png">
+								<img src="img/img_60.png">
+							</div>
+							<div class="content_1_img">
+								<img src="img/img_61.png">
+							</div>
+							<div class="content_1_img">
+								<img src="img/img_62.png">
+								<img src="img/img_63.png">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<footer>
+		
+		<a href="#top"><img src="img/vision.png"></a>
+		<br>
+		<span>All rights reserved ©Brightblue Material Technology Co., Ltd.</span>
+	</footer>
+</body>
+<script type="text/javascript">
+	var img=document.getElementsByClassName("img")[0];
+	let index=1;
+	// for(var i=0;i<img.length;i++){
+	// 	img[i].style.background="url(img/slider"+(i+1)+".jpg)";
+	// 	img[i].style.backgroundSize="100% 100%";
+	// }
+	function clear(){
+		img.className="img";
+	}
+	function show(){
+		img.style.background="url(img/slider"+index+".jpg)";
+		img.style.backgroundSize="100% 100%";
+		img.className="img show";
+	}
+	show();
+	var timer;
+	function timeshow(){
+		timer=setInterval(function(){
+			clear();
+			index++;
+			if(index>3){
+				index=1;
+			}
+			show();
+		},4000)
+	}
+	timeshow();
+	let content_1_span=document.getElementsByClassName("content_1_span");
+	let content_1_img=document.getElementsByClassName("content_1_img");
+	let content2_menu_all=document.getElementsByClassName('content2_menu_all');
+	let content2_menu_2=document.getElementsByClassName('content2_menu_2');
+	let content2_menu_title=document.getElementsByClassName('content2_menu_title');
+	for(let i=0;i<content2_menu_title.length;i++){
+		content2_menu_title[i].onclick=function(){
+			for(let i=0;i<content2_menu_2.length;i++){
+			content2_menu_2[i].style.border="0px solid rgb(0 139 139)";
+		}
+	}
+}
+	for(let i=0;i<content2_menu_2.length;i++){
+		content2_menu_2[i].onclick=function(){
+			for(let i=0;i<content2_menu_2.length;i++){
+			content2_menu_2[i].style.border="0px solid rgb(0 139 139)"
+	}
+			content2_menu_2[i].style.border="3px solid rgb(0 139 139)"
+		}
+	};
+	function clear2(){
+		for(var i=0;i<content_1_img.length;i++){
+			content_1_img[i].className="content_1_img";
+			content_1_span[i].className="content_1_span";
+		}
+	};
+	for(let i=0;i<content_1_img.length;i++){
+		content2_menu_all[i].onclick=function(){
+			clear2();
+			content_1_img[i].className="content_1_img content_1_img_show";
+			content_1_span[i].className="content_1_span content_1_span_show";
+		}
+	};
+</script>
+</html>

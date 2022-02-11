@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Brightblue Material Technology</title>
+	<link rel="shortcut icon" type="text/css" href="img/icon.png">
+</head>
+<style type="text/css">
+	.content1{
+		width: 1200px;
+		height: 80px;
+		position: absolute;
+		background-image:  linear-gradient(45deg, rgba(255,255,255,1),rgba(255,255,255,0.5));
+	}
+	.menu0{
+		width: 70px;
+		height: 50px;
+		margin-top: 10px;
+		margin-left: 50px;
+		border-radius: 30px;
+	}
+	.menu{
+		float: right;
+		line-height: 80px;
+		margin-right: 20px;
+	}
+	.menu1{
+		margin-left: 30px;
+		color: grey;
+		text-decoration: none;
+		font-family: "微软雅黑";
+	}
+	.menu1:hover{
+		color: skyblue;
+	}
+	.active{
+		color: skyblue;
+	}
+	.box{
+		width: 1200px;
+		height: 600px;
+		margin: auto;
+		cursor: pointer;
+	}
+	.img{
+		width: 1200px;
+		height: 600px;
+		opacity: 0;
+	}
+	.show{
+		opacity: 1;
+		transition: all 0.8s;
+	}
+	.content2{
+		width: 800px;
+		height: 200px;
+		margin:40px auto;
+		text-align: center;
+		font-size: 20px;
+		font-family: "微软雅黑";
+	}
+	.content1_menu{
+		width: 350px;
+		height: 300px;
+		position: absolute;
+		margin-left: 120px;
+		margin-top: 200px;
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 1px 1px 2px grey;
+		font-family: "微软雅黑";
+	}
+</style>
+<body>
+	<div class="box">
+		<div class="content1">
+		<img class="menu0" src="img/icon.png">
+		<span class="menu">
+			<a class="menu1" href="index.html" name="top">About Us</a>
+			<a class="menu1" href="index2.html">Product</a>
+			<a class="menu1" href="index3.html">R&D</a>
+			<a class="menu1 active" href="index4.html">Application</a>
+			<a class="menu1" href="index5.html">Contact Us</a>
+		</span>
+	</div>
+	<div class="img show">
+	</div>
+</body>
+<script type="text/javascript">
+	var img=document.getElementsByClassName("img")[0];
+	let index=1;
+	// for(var i=0;i<img.length;i++){
+	// 	img[i].style.background="url(img/slider"+(i+1)+".jpg)";
+	// 	img[i].style.backgroundSize="100% 100%";
+	// }
+	function clear(){
+		img.className="img";
+	}
+	function show(){
+		img.style.background="url(img/slider"+index+".jpg)";
+		img.style.backgroundSize="100% 100%";
+		img.className="img show";
+	}
+	show();
+	var timer;
+	function timeshow(){
+		timer=setInterval(function(){
+			clear();
+			index++;
+			if(index>3){
+				index=1;
+			}
+			show();
+		},4000)
+	}
+	timeshow();
+</script>
+</html>
