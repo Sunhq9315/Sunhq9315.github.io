@@ -69,6 +69,46 @@
 		box-shadow: 1px 1px 2px grey;
 		font-family: "微软雅黑";
 	}
+	.content2{
+		width: 1200px;
+		height: 600px;
+	}
+	.content2 td{
+		height: 120px;
+	}
+	.content2 td:hover{
+		box-shadow: 2px 2px 10px 2px rgba(211,211,211,0.7);
+	}
+	.content2_div{
+		display: none;
+	}
+	.content2_span{
+		display: none;
+	}
+	.content2_span_show{
+		display: inline;
+	}
+	.content2_div_show{
+		display: block;
+	}
+	.content2_div img{
+		width: 100px;
+		height: 100px;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+	footer{
+		height: 200px;
+		background-color: rgba(0,0,0,0.7);
+		text-align: center;
+		color: white;
+	}
+	footer img{
+		width: 50px;
+		height: 50px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
 </style>
 <body>
 	<div class="box">
@@ -77,13 +117,108 @@
 		<span class="menu">
 			<a class="menu1" href="index.html" name="top">About Us</a>
 			<a class="menu1" href="index2.html">Product</a>
-			<a class="menu1 active" href="index3.html">R&D</a>
+			<a class="menu1 active" href="index3.html">Capabilities</a>
 			<a class="menu1" href="index4.html">Application</a>
 			<a class="menu1" href="index5.html">Contact Us</a>
 		</span>
 	</div>
 	<div class="img show">
 	</div>
+	<table class="content2" cellspacing="20">
+		<tr>
+			<td class="content2_menu" style="width:300px">Production Capabilities</td>
+			<td rowspan="5" style="text-align: left;">
+				<span class="content2_span content2_span_show">
+					<p>Our greatest strengths is the depth of our industry and technical knowledge. Amongst our technical staff, we have decades of product and process engineering experience.  At Brightblue, we have a broad array of mixing equipment in service, including 3 rolling machines for aluminum foils , 12  expanded metal machines and 3 perforated mesh machines for metal mesh, and more than 30 plastic injection machines for plastic components,  our technical center is well equipped by various inspection equipment  and experienced engineers , which enable us to provide diverse solution to customers especially in air filtration industries in a timely manner . Our technical experts works with our clients with technical support to address product related issues that may arise in the field .</p>
+				</span>
+				<span class="content2_span">
+					<p>
+						Our foil rolling mills tailored to the specific operation purpose reliably produce best foil qualities at maximum rolling speeds, maximum rolling widths and highest coil weights , which could produce a wide range of aluminum foils from thickness 0.008 mm to 0.5 mm
+					</p>
+				</span>
+				<span class="content2_span">
+					<p>
+						Our production for metal mesh  is automatically done by automatic feeder , expanded metal machine, perforated mesh machine, automatic flattener, and automatic straightener etc. Rely on our leading technologies in the industry, the metal mesh produced by us has no burrs, and will not break, which ranks the first-class level in the industry whether in flatness ,type or production speed. 
+					</p>
+				</span>
+				<span class="content2_span">
+					<p>
+						BRIGHTBLUE has been serving clients for air filtration industries for more than 10 years, our main products are plastic frames for coarse, sub-Hepa and HEPA air filters , bag filter plastic frames, panel filter plastic frames , and a variety of plastic connectors ,filter press, etc.
+					</p>
+				</span>
+				<span class="content2_span">
+					<p>
+						Brightblue’s  R&D and Engineering department focuses on the design and development of high-precision aluminum foil, metal mesh , plastic components , and advanced manufacturing techniques. The goal is to develop defect free products while also aiming to achieve the highest manufacturing efficiencies. In close association with our customers, we strive to provide unique solutions, perfectly tailored to meet specific requirements.
+					</p>
+					<br>
+					<p>
+						Our rigorous quality tests include:
+						<br>
+Chemical composition test 
+<br>
+Tensile test
+<br>
+Melt Flow Index Test
+<br>
+3D dimensional Test
+<br>
+Hardness Test
+<br>
+Aging Test
+					</p>
+				</span>
+				<div class="content2_div content2_div_show">
+					
+				</div>
+				<div class="content2_div">
+					<img src="img/img2_1.png">
+					<img src="img/img2_2.png">
+					<img src="img/img2_3.png">
+					<img src="img/img2_4.png">
+					<img src="img/img2_5.png">
+				</div>
+				<div class="content2_div">
+					<img src="img/img2_6.png">
+					<img src="img/img2_7.png">
+					<img src="img/img2_8.png">
+					<img src="img/img2_9.png">
+				</div>
+				<div class="content2_div">
+					<img src="img/img2_10.png">
+					<img src="img/img2_11.png">
+					<img src="img/img2_12.png">
+					<img src="img/img2_13.png">
+					<img src="img/img2_14.png">
+				</div>
+				<div class="content2_div">
+					<img src="img/img2_15.png">
+					<img src="img/img2_16.png">
+					<img src="img/img2_17.png">
+					<img src="img/img2_18.png">
+					<img src="img/img2_19.png">
+					<img src="img/img2_20.png">
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="content2_menu">Aluminum Foil</td>
+		</tr>
+		<tr>
+			<td class="content2_menu">Metal Mesh</td>
+		</tr>
+		<tr>
+			<td class="content2_menu">Plastic Components</td>
+		</tr>
+		<tr>
+			<td class="content2_menu">Measurement Capabilities</td>
+		</tr>
+	</table>
+	<footer>
+		
+		<a href="#top"><img src="img/vision.png"></a>
+		<br>
+		<span>All rights reserved ©Brightblue Material Technology Co., Ltd.</span>
+	</footer>
 </body>
 <script type="text/javascript">
 	var img=document.getElementsByClassName("img")[0];
@@ -113,5 +248,19 @@
 		},4000)
 	}
 	timeshow();
+	var content2_menu=document.getElementsByClassName("content2_menu");
+	var content2_span=document.getElementsByClassName("content2_span");
+	var content2_div=document.getElementsByClassName('content2_div');
+	for(let i=0;i<content2_span.length;i++){
+		content2_menu[i].onclick=function(){
+			for(var j=0;j<content2_span.length;j++){
+				content2_span[j].className="content2_span";
+				content2_div[j].className="content2_div";
+			}
+			content2_span[i].className="content2_span content2_span_show";
+			content2_div[i].className="content2_div content2_div_show";
+		}
+	}
+	
 </script>
 </html>
