@@ -6,6 +6,9 @@
 	<link rel="shortcut icon" type="text/css" href="img/icon.png">
 </head>
 <style type="text/css">
+	img{
+		cursor: zoom-in;
+	}
 	.content1{
 		width: 1200px;
 		height: 80px;
@@ -146,6 +149,21 @@
 	}
 	.content_1_img_show{
 		display: inline;
+	}
+	.op{
+		width: 100%;
+		height: 100%;
+		background-color: rgba(211, 211, 211, 0.8);
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		display: none;
+	}
+	.op_1{
+		width: 50%;
+		height: 50%;
+		background-color: white;
+		margin: 200px auto;
 	}
 </style>
 <body>
@@ -513,6 +531,11 @@ packing :wood cases<br>
 		<br>
 		<span>All rights reserved ©Suzhou Brightblue Technology Co.,Ltd.</span>
 	</footer>
+	<div class="op">
+		<div class="op_1">
+			<img class="op_i" src="" style="width: 100%;height: 100%;cursor: zoom-out;">
+		</div>
+	</div>
 </body>
 <script type="text/javascript">
 	var img=document.getElementsByClassName("img")[0];
@@ -575,5 +598,18 @@ packing :wood cases<br>
 			content_1_span[i].className="content_1_span content_1_span_show";
 		}
 	};
+	var IMG=document.getElementsByTagName("img");
+	var op=document.getElementsByClassName("op")[0];
+	var op_1=document.getElementsByClassName("op_1")[0];
+	var op_i=document.getElementsByClassName("op_i")[0];
+	for(let g=0;g<IMG.length;g++){
+		IMG[g].onclick=function(){
+			op.style.display="inline-block";
+			op_i.src=IMG[g].getAttribute("src");
+		}
+	}
+	op.onclick=function(){
+		op.style.display="none";
+	}
 </script>
 </html>
